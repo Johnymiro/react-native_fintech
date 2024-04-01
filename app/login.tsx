@@ -40,10 +40,10 @@ const Page = () => {
         await startOAuthFlow();
 
       if (createdSessionId) {
+        console.log("data", { createdSessionId, signIn, signUp });
         setActive!({ session: createdSessionId });
       } else {
         // Use signIn or signUp for next steps such as MFA
-
 
         const emailAddress = signUp!.emailAddress;
         const name = signUp!.firstName;
@@ -56,7 +56,14 @@ const Page = () => {
         });
         const sessionId = signUp!.createdSessionId;
 
-        console.log("all data",  {name, emailAddress, lastName, signUp, sessionId});
+        console.log("all data", {
+          name,
+          emailAddress,
+          lastName,
+          signUp,
+          sessionId,
+        });
+        sessionId && setActive!({ session: sessionId });
       }
     } catch (err) {
       console.error("OAuth error", err);

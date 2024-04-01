@@ -83,9 +83,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.anonymous.fintech'
+    namespace 'com.supersimon.fintech'
     defaultConfig {
-        applicationId 'com.anonymous.fintech'
+        applicationId 'com.supersimon.fintech'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

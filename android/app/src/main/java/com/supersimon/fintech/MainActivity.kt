@@ -1,4 +1,4 @@
-package com.anonymous.fintech
+package com.supersimon.fintech
 
 import android.os.Build
 import android.os.Bundle
