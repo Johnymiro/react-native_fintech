@@ -6,10 +6,9 @@
 
 This is a React Native FinTech clone using [Clerk](https://go.clerk.com/tQXLCe8) for user authentication with OTP. This app was inspired by the [Revolut](https://www.revolut.com/) app.
 
-.env
 
 ```
-EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=
+span
 ```
 
 Additional features:
